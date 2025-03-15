@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Egg Timer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="icon"
+      type="image"
+      href="https://cdn-icons-png.flaticon.com/512/10209/10209438.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1><em> Egg Timer</em></h1>
+    <img
+      src="https://media.tenor.com/9Fi8d9L09UMAAAAM/exciting-usagi.gif"
+      alt="chiikawa"
+    />
+
+    <div id="display">
+      <p>Time Left: <span id="timeDisplay"> 00:00 </span></p>
+    </div>
+
+    <div id="timer">
+      <button onclick="startTimer(6)">6 Mins</button>
+      <button onclick="startTimer(8)">8 Mins</button>
+      <button onclick="startTimer(10)">10 Mins</button>
+      <button onclick="startTimer(15)">15 Mins</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

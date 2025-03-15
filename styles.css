@@ -1,0 +1,71 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-family: cursive;
+  color: white;
+  text-align: center;
+}
+
+#display {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#timer {
+  margin-top: 30px;
+  font-size: 24px;
+  color: white;
+}
+
+/* Button container to align buttons in a row */
+.button-container {
+  display: flex;
+  gap: 15px; /* Adds spacing between buttons */
+  margin-top: 20px;
+}
+
+/* Button styling */
+button {
+  border-radius: 50px;
+  padding: 15px 25px;
+  cursor: pointer;  
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 16px;
+  border: 2px double transparent;
+  background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), 
+                    radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+/* Button hover effect */
+button:hover {
+  transform: scale(1.1); /* Slightly increase size on hover */
+  filter: brightness(1.2);
+}
+
+/* 🔹 Mobile Responsive Styles */
+@media (max-width: 600px) {
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px;
+  }
+
+  button {
+    width: 100%; /* Make buttons full-width */
+    max-width: 150; /* Limit button width */
+    padding: 12px 20px;
+    font-size: 14px;
+    margin: 5px;
+  }
+}
